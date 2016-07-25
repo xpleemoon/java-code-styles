@@ -1,6 +1,6 @@
-REM Installs Square's IntelliJ configs into your user configs.
+REM Installs 51offer's IntelliJ configs into your user configs.
 @echo off
-echo Installing Square IntelliJ configs...
+echo Installing 51offer IntelliJ configs...
 
 setlocal enableDelayedExpansion
 
@@ -9,7 +9,7 @@ for /D %%i in (%userprofile%\.IdeaIC*) do call :copy_config %%i
 for /D %%i in (%userprofile%\.IntelliJIdea*) do call :copy_config %%i
 
 echo.
-echo Restart IntelliJ and/or AndroidStudio, go to preferences, and apply 'Square' or 'SquareAndroid'.
+echo Restart IntelliJ and/or AndroidStudio, go to preferences, and apply '51offer' or '51offerAndroid'.
 exit /b
 
 REM sub function for copy config files
